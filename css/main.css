@@ -1,0 +1,471 @@
+:root {
+	--white: #FFFFFF;
+	--black: #000000;
+	--dark: #232830;
+	--blue-light: #36a5ff;
+	--blue-dark: #0c71c3;
+	--blue-hover: #063a65;
+	--green: #008000;
+	--font-family: 'Open Sans', sans-serif;
+	--section-padding-mobile: 48px 12px;
+	--section-padding-desktop: 72px 10%;
+	--method-text-size-mobile: 24px;
+	--method-text-size-desktop: 30px;
+	--benefits-title-size-mobile: 24px;
+	--benefits-title-size-desktop: 30px;
+	--benefits-size-mobile: 15px;
+	--benefits-size-desktop: 17px;
+	--form-tittle-size-mobile: 17px;
+	--form-message-size-mobile: 13px;
+	--section-title-size-mobile: 24px;
+	--section-title-size-desktop: 30px;
+	--carousel-item-title-size-mobile: 20px;
+	--carousel-item-paragraph-size-mobile: 15px;
+	--carousel-item-paragraph-size-desktop: 17px;
+	--callToAction-data-text-size-mobile: 14px;
+	--callToAction-data-text-size-desktop: 16px;
+}
+
+body{
+	margin: 0px;
+	text-align: center;
+	font-family: var(--font-family);
+}
+
+.fondo {
+	background-attachment: fixed;
+	background-color: var(--dark);
+	background-position: center;
+	background-size: cover;
+}
+
+.background--benefits {
+	background-image: url(../assets/images/beneficios400.png);
+}
+
+.background--call1 {
+	background-image: url(../assets/images/llamado1400.png);
+}
+
+.background--call2 {
+	background-image: url(../assets/images/llamado2400.png);
+}
+
+.background--call3 {
+	background-image: url(../assets/images/perdida400.png);
+}
+
+.section {
+	padding: var(--section-padding-mobile);
+}
+
+.section--methodPhone {
+	background-color: var(--blue-dark);
+	padding: 24px 12px;
+}
+
+.section--methodWhatsapp {
+	background-color: var(--green);
+	padding: 24px 12px;
+}
+
+.secction--benefits {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.strong-azul-claro {
+ 	color: var(--blue-light);
+}
+
+.strong-azul-oscuro {
+	color: var(--blue-dark);
+}
+
+.button{
+	background-color: var(--blue-dark);
+	border-color: var(--white);
+	cursor: pointer;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	height: 65px;
+	padding: 10px;
+	width: 250px;
+}
+
+.button:hover{ 
+	background-color: var(--blue-hover) ;
+}
+
+.button--form {
+	margin-top: 32px;
+	width: 90%;
+}
+
+.button--list {
+	margin-top: 40px;
+	width: 90%;
+}
+
+.method-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.method-image {
+	width: 75px;
+	margin: 0px 12px;
+}
+
+.method-text a {
+	color: var(--white);
+	font-size: var(--method-text-size-mobile);
+	margin: 0px 12px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.benefits-title {
+	color: var(--white);
+	font-size: var(--benefits-title-size-mobile);  
+	margin: 30px 0px 0px 0px;
+}
+
+.benefits-text {
+	margin: 50px 0px;
+}
+
+.benefits {
+	color: var(--white);
+	font-size: var(--benefits-size-mobile)
+}
+.benefits:nth-of-type(3) {
+	display: none;
+}
+
+.benefits-message {
+	color: var(--white);
+	font-size: var(--carousel-item-paragraph-size-mobile);
+	margin: 32px 0px;
+}
+
+.form-background {
+	background-color: var(--white);
+	border: solid 1px black;
+	box-sizing: border-box;
+	padding: 36px 12px;
+	width: 280px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-title {
+	font-size: var(--form-tittle-size-mobile);
+	font-weight: bold;
+	margin: 0px;
+}
+
+.form-message {
+	font-size: var(--form-message-size-mobile);
+	margin: 20px 0px;
+}
+
+.field {
+	height: 45px;
+	margin-bottom: 10px;
+	width: 90%;
+}
+
+.field--textarea {
+	font-family: var(--font-family);
+	margin-bottom: 0px;
+	padding-top: 10px;
+	height: 70px;   
+}
+
+.section-title {
+	font-size: var(--section-title-size-mobile); 
+	font-weight: normal; 
+	margin: 0px 0px 48px 0px;
+}
+
+#product.carousel-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#product .carousel-item {
+	background-color: var(--white);
+	border: black 1px solid;
+	box-sizing: border-box;
+	display: grid;
+    grid-template-rows: 1fr auto;
+	padding: 20px 10px;
+	margin: 0px 0px 24px 0px;
+	width: 280px;
+}
+
+#product .carousel-list {
+	list-style: disclosure-closed; 
+	text-align: left;
+}
+
+#product .carousel-point {
+	margin-bottom: 5px;
+}
+
+#product .item--disabled {
+	display: none;
+}
+
+.carousel-controls {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 12px;
+	width: 200px;
+}
+.control-arrow {
+	background-color: var(--blue-dark);
+	color: var(--white);
+	font-size: 30px;
+	font-weight: normal;
+	margin: 0px;
+	padding: 10px 18px;
+}
+.control-arrow:hover {
+	background-color: var(--blue-hover);
+	cursor: pointer;
+}
+
+.callToAction {
+	text-align: center;
+}
+
+.callToAction-title {
+	color: var(--white);
+	font-size: var(--section-title-size-mobile);
+	font-weight: normal;
+	margin: 0px 0px 40px 0px;
+}
+
+.carousel-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.carousel-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.carousel-item {
+	margin: 16px 0px 28px 0px;
+}
+
+.item--disabled {
+	display: none;
+}
+
+.carousel-image {
+	max-height: 200px;
+	object-fit: cover;
+	max-width: 200px;
+}
+
+.carousel-subtitle {
+	font-size: var(--carousel-item-title-size-mobile);
+	margin: 28px 0px;
+}
+
+.carousel-paragraph {
+	font-size: var(--carousel-item-paragraph-size-mobile);
+	margin: 28px 0px 0px 0px;
+}
+.validity-list{
+	list-style: none;
+	padding: 0;
+	margin: 28px 0px;
+}
+.map-image {
+	max-width: 400px;
+	width: 100%;
+}
+
+.call3 .callToAction-title {
+	font-size: var(--benefits-title-size-mobile);
+	font-weight: bold;
+}
+
+.callToAction-paragraph {
+	color: var(--white);
+	font-size: var(--carousel-item-paragraph-size-mobile);
+	margin: 36px 0px 0px 0px;
+}
+
+.call3 .button--callToAction {
+	margin: 75px 0px 100px 0px;
+}
+
+.callToAction-data {
+	display: flex;
+	flex-direction: column;
+}
+
+.callToAction-direction, .callToAction-whatsapp {
+	color: var(--white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: var(--callToAction-data-text-size-mobile);
+}
+
+.call3 a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+.call3 img {
+	height: 22px;
+	width: 22px;
+	margin-right: 12px;
+}
+
+.promotion-container {
+	background-color: black; 
+	color: white; 
+	font-size: 11px;
+	padding: 5px;
+}
+
+.promotion-container a {color:#FC0;}
+
+@media (min-width: 700px) {
+	.background--benefits {
+		background-image: url(../assets/images/beneficios.png);
+	}
+	.background--call1 {
+		background-image: url(../assets/images/llamado1.png);
+	}
+	.background--call2 {
+		background-image: url(../assets/images/llamado2.png);
+	}
+	.background--call3 {
+		background-image: url(../assets/images/perdida.png);
+	}
+	.section {
+		padding: var(--section-padding-desktop);
+	}
+	.section--methodPhone, .section--methodWhatsapp {
+		padding: 24px 12px;
+	}
+	.secction--benefits {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.method-container {
+		justify-content: center;
+	}
+	.method-image {
+		margin: 0px 24px;
+	}
+	.method-text a {
+		font-size: var(--method-text-size-desktop);
+	}
+	.benefits-container {
+		width: 50%;
+	}
+	.benefits-title {
+		font-size: var(--benefits-title-size-desktop);  
+	}
+	.benefits {
+		font-size: var(--benefits-size-desktop)
+	}
+	.benefits:nth-of-type(3){
+		display: inline;
+	}
+	.benefits-message {
+		font-size: var(--carousel-item-paragraph-size-desktop);
+		width: 50%;
+	}
+	.section-title {
+		font-size: var(--section-title-size-desktop); 
+		margin: 0px 0px 72px 0px;
+	}
+	#product.carousel-container {
+		display: flex;
+		flex-direction: column;
+		align-items: initial;
+	}
+	#product .carousel-content {
+		display: flex;
+		justify-content: center;
+	}
+	#product .item--disabled {
+		display: inline-grid;
+	}
+	#product .carousel-item {
+		margin: 0px 12px 24px 12px;
+		max-width: 280px;
+		width: 30%;
+	}
+	.button--list {
+		width: 90%;
+	}
+	.carousel-controls {
+		display: none;
+	}
+	.call1, .call2 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.callToAction-title {
+		font-size: var(--section-title-size-desktop);
+		margin: 0;
+		width: 50%;
+	}
+	.button--callToAction {
+		margin: 0px 50px;
+	}
+	.carousel-content {
+		justify-content: space-around;
+	}
+	.carousel-item {
+		width: 20%;
+	}
+	.item--disabled {
+		display: block;
+	}
+	.carousel-image {
+		max-width: 150px;
+	}
+	.validity-container{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.validity-brand {
+		padding: 0px 50px;
+	}
+	.call3 .callToAction-title {
+		font-size: var(--benefits-title-size-desktop);
+		margin-bottom: 72px;
+		width: 100%;
+	}
+	.callToAction-paragraph {
+		font-size: var(--carousel-item-paragraph-size-desktop);
+	}
+	.callToAction-direction, .callToAction-whatsapp {
+		font-size: var(--callToAction-data-text-size-desktop);
+	}
+}
